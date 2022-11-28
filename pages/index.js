@@ -51,9 +51,9 @@ export default function Home() {
         <img className='w-full block sm:hidden' src='/bg-gesst-vertical.png' autoPlay muted loop></img>
         <img className='w-full hidden sm:block' src='/bg-gesst.png' autoPlay muted loop></img>
       
-        <div className='w-full absolute top-0 py-16 px-4 sm:px-20 lg:px-28 xl:px-36 flex flex-col sm:text-5xl text-white z-10'>
+        <div className='w-full absolute top-0 py-16 px-8 sm:px-20 lg:px-28 xl:px-36 flex flex-col sm:text-5xl text-white z-10'>
           <h1 data-aos="zoom-in" className='py-8 text-[30px] drop-shadow-2xl min-[320px]:py-12 min-[350px]:pt-24 min-[350px]:text-[36px] min-[420px]:text-[46px] min-[460px]:pt-32 min-[550px]:pt-48 min-[550px]:text-[56px] min-[640px]:text-[34px] min-[640px]:py-6 min-[850px]:text-[54px] lg:text-[58px] lg:py-16 min-[1150px]:py-24 xl:py-28 2xl:py-40 2xl:text-[64px] 2xl:leading-[70px] min-[1700px]:py-48 min-[1700px]:text-[72px] min-[1700px]:leading-[80px]'>Um <strong>NOVO</strong> conceito <br/> em gestão de SST<br/>no eSocial</h1>
-          <p data-aos="fade-right" className='text-xl mt-6 min-[460px]:text-2xl min-[550px]:mt-16 min-[640px]:text-xl min-[640px]:mt-1 2xl:text-[24px] min-[1700px]:text-[28px]'>Tudo que sua empresa precisa para atendimento a legislação trabalhista e previdenciária em 2023!</p>
+          <p data-aos="zoom-in-up" className='text-xl mt-6 min-[460px]:text-2xl min-[550px]:mt-16 min-[640px]:text-xl min-[640px]:mt-1 2xl:text-[24px] min-[1700px]:text-[28px]'>Tudo que sua empresa precisa para atendimento a legislação trabalhista e previdenciária em 2023!</p>
         </div>
       </section>
 
@@ -84,51 +84,53 @@ export default function Home() {
       </section>
 
       <section className='bg-[#f5f6f7] w-full py-14'>
-        <div data-aos="zoom-in" className='w-full text-center text-[#00578e] text-3xl sm:text-5xl px-2 font-bold'>
+        <div data-aos="zoom-in" className='w-full text-center text-[#00578e] text-3xl sm:text-5xl px-8 sm:px-16 lg:px-32 xl:px-64 2xl:px-96  font-bold lg:text-left'>
           <h2>Quem somos</h2>
         </div>
-        <div className='flex flex-col mt-16 px-4 sm:px-16 lg:px-40 xl:px-64'>
+        <div className='flex flex-col lg:flex-row lg:items-center mt-16 px-4 sm:px-16 lg:px-32 xl:px-64 2xl:px-96'>
           <div data-aos="flip-left" className='w-full'>
-            <img className='w-1/2 sm:w-1/3 lg:w-1/4 m-auto' src='G.png' alt='Logo G'/>
+            <img className='w-1/2 sm:w-1/3 lg:w-full m-auto' src='G.png' alt='Logo G'/>
           </div>
-          <div data-aos="zoom-in" className='w-full mt-10'>
-            <p className='text-xl text-[#00578e]'>Visando um atendimento mais completo no mercado em departamento pessoal, recursos humanos e segurança do trabalho e medicina ocupacional é que nasce a GESST.  Uma empresa formada pela junção das maiores empresas em cada segmento.</p>
+          <div className='flex flex-col lg:px-12'>
+            <div data-aos="zoom-in" className='w-full mt-10'>
+              <p className='text-xl text-[#00578e]'>Visando um atendimento mais completo no mercado em departamento pessoal, recursos humanos e segurança do trabalho e medicina ocupacional é que nasce a GESST.  Uma empresa formada pela junção das maiores empresas em cada segmento.</p>
+            </div>
+            <button data-aos="zoom-out" className='w-2/3 md:w-1/3 bg-white p-4 mt-8 text-[#00578e] border border-[#707070] text-xl font-bold rounded-lg shadow-xl'>Saiba mais</button>
           </div>
-          <button data-aos="zoom-out" className='w-2/3 md:w-1/3 bg-white p-4 mt-8 text-[#00578e] border border-[#707070] text-xl font-bold rounded-lg shadow-xl'>Saiba mais</button>
         </div>
       </section>
 
       <section className='bg-[#00578e] w-full py-6'>
         <div className='w-full flex flex-col md:flex-row md:items-center px-8 sm:px-16 lg:px-24 xl:px-44'>
-          <h2 data-aos="fade-up-right" className='text-white font-bold text-3xl'>Conte-nos um pouco mais sobre sua empresa. Solicite orçamento ou entre em contato com a nossa equipe!</h2>
-          <div data-aos="fade-up-left" className='w-full mt-10 lg:mt-0 flex flex-col items-center md:items-end'>
+          <h2 data-aos="fade-up" className='text-white font-bold text-3xl'>Conte-nos um pouco mais sobre sua empresa. Solicite orçamento ou entre em contato com a nossa equipe!</h2>
+          <div data-aos="fade-down" className='w-full mt-10 lg:mt-0 flex flex-col items-center md:items-end'>
             <button className='w-full min-[550px]:w-[70%] md:w-5/6 xl:w-4/6 h-[80px] p-4 bg-[#f5aa1d] text-white rounded-full text-xl'>Solicitar orçamento</button>
-            <button className='w-full min-[550px]:w-[70%] md:w-5/6 xl:w-4/6 h-[80px] p-4 bg-white text-[#00578e] rounded-full text-xl mt-5'>Conversar com a equipe</button>
+            <button className='w-full min-[550px]:w-[70%] md:w-5/6 xl:w-4/6 h-[80px] p-4 bg-white text-[#00578e] rounded-full text-xl mt-5'><a rel="noreferrer" href='https://wa.me/5579999210991' target="_blank">Conversar com a equipe</a></button>
           </div>
         </div>
       </section>
 
-      <section className='bg-[#f5f6f7] py-14 px-4 sm:px-28 w-full'>
+      <section className='bg-[#f5f6f7] py-14 px-4 sm:px-28 w-full overflow-hidden'>
         <h2 data-aos="fade-down" className='text-3xl sm:text-4xl text-[#f5aa1d] text-center font-bold'>Perguntas frequentes</h2>
         <div className='flex flex-col w-full lg:w-3/4 xl:w-2/4 m-auto'> {/* PERGUNTAS FRENQUENTES */}
           <div data-aos="fade-right" onClick={taskOne} className='bg-[#00578e] rounded-3xl px-8 py-6 mt-16 z-10'>
             <h2 className='text-white text-lg flex items-center justify-between font-bold'>O que é o eSocial? <BsFillArrowDownCircleFill className='hidden text-2xl md:block ml-4' /></h2>
           </div>
-          <div id="answer1" className='bg-[#00578e] rounded-3xl -mt-10 px-8 py-10 toggle'>
+          <div data-aos="fade-right" id="answer1" className='bg-[#00578e] rounded-3xl -mt-10 px-8 py-10 toggle'>
             <div className='w-full'>
               <p className='text-white tx-lg'>É uma plataforma online do governo que unificou a entrega de 15 obrigações da área trabalhista para empresas, outras pessoas jurídicas e também para pessoas físicas. Em vez de ter que preencher várias guias e entregá-las em canais diferentes, o empregador deverá usar apenas o sistema para cumprir a lei e manter sua contratação na legalidade.</p>
             </div>
           </div>
-          <div  data-aos="fade-left" onClick={taskTwo} className='bg-[#00578e] rounded-3xl px-8 py-6 mt-12 z-10'>
-            <h2 className='text-white text-lg flex items-center  font-bold'>Minha empresa é obrigada a fazer os envios de SST para o eSocial? <BsFillArrowDownCircleFill className='hidden text-2xl md:block ml-4' /></h2>
+          <div data-aos="fade-left" onClick={taskTwo} className='bg-[#00578e] rounded-3xl px-8 py-6 mt-12 z-10'>
+            <h2 className='text-white text-lg flex items-center justify-between font-bold'>Minha empresa é obrigada a fazer os envios de SST para o eSocial? <BsFillArrowDownCircleFill className='hidden text-2xl md:block ml-4' /></h2>
           </div>
-          <div id="answer2" className='bg-[#00578e] rounded-3xl -mt-10 px-8 py-10 toggle'>
-            <p className='text-white tx-lg'>Sim, toda empresa que possui ao menos um empregador em seu quadro funcional tem a obrigatoriedade de fazer os envios ao eSocial</p>
+          <div data-aos="fade-left" id="answer2" className='bg-[#00578e] rounded-3xl -mt-10 px-8 py-10 toggle'>
+            <p className='text-white tx-lg'>Sim, toda empresa que possui ao menos um empregador em seu quadro funcional tem a obrigatoriedade de fazer os envios ao eSocial.</p>
           </div>
           <div data-aos="fade-right" onClick={taskThree} className='bg-[#00578e] rounded-3xl px-8 py-6 mt-12 z-10'>
-            <h2 className='text-white text-lg flex items-center font-bold'>Qual a finalidade dos programas de Saúde e Segurança do trabalho? <BsFillArrowDownCircleFill className='hidden text-2xl md:block ml-4' /></h2>
+            <h2 className='text-white text-lg flex items-center justify-between font-bold'>Qual a finalidade dos programas de Saúde e Segurança do trabalho? <BsFillArrowDownCircleFill className='hidden text-2xl md:block ml-4' /></h2>
           </div>
-          <div id="answer3" className='bg-[#00578e] rounded-3xl -mt-10 px-8 py-10 toggle'>
+          <div data-aos="fade-right" id="answer3" className='bg-[#00578e] rounded-3xl -mt-10 px-8 py-10 toggle'>
             <p className='text-white tx-lg'> Servem como medidas educativas, preventivas e de conscientização dos riscos existentes no ambiente de trabalho e da saúde do colaborador.</p>
           </div>
         </div>

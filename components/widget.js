@@ -2,7 +2,7 @@ import { Link } from 'react-scroll/modules'
 
 export default function Widget () {
     return (
-        <section className="w-full bg-[#00578e] px-12 md:px-16 lg:px-24 py-10">
+        <section className="w-full bg-[#00578e] px-8 md:px-16 lg:px-24 py-10">
             <div className="w-full sm:w-5/6 xl:w-3/4 m-auto flex flex-wrap justify-between">
                 <div className="w-full lg:w-1/4 mt-4">
                     <img className="w-2/3 sm:w-1/3 lg:w-3/4 m-auto lg:m-0" src="logo-gesst-white.png" alt="Logo Gesst Branca"/>
@@ -19,7 +19,7 @@ export default function Widget () {
                 </div>
                 <div className="w-full lg:w-1/4 mt-10 lg:m-0 text-white">
                     <h4 className="text-xl"><strong>Contato</strong></h4>
-                    <p className="text-lg mt-4">Telefone: (79) 99653-6481</p>
+                    <p className="text-lg mt-4">Telefone: (79) 99921-0991</p>
                     <p className="text-lg mt-4">E-mail: comercial01@grupogesst.com.br</p>
                 </div>
             </div>

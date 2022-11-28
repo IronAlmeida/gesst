@@ -182,4 +182,103 @@ a {
     height: 250px;
     transition: 0.9s ease;
   }
+
+  #answer2.show{
+    visibility: visible;
+    height: 120px;
+    transition: 0.9s ease;
+  }
+
+  #answer3.show{
+    visibility: visible;
+    height: 140px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 500px){
+  #answer1.show{
+    visibility: visible;
+    height: 210px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 600px){
+  #answer1.show{
+    visibility: visible;
+    height: 160px;
+    transition: 0.9s ease;
+  }
+
+  #answer2.show{
+    visibility: visible;
+    height: 100px;
+    transition: 0.9s ease;
+  }
+
+  #answer3.show{
+    visibility: visible;
+    height: 100px;
+    transition: 0.9s ease;
+  }
+}
+@media (min-width: 640px){
+  #answer1.show{
+    visibility: visible;
+    height: 230px;
+    transition: 0.9s ease;
+  }
+
+  #answer2.show{
+    visibility: visible;
+    height: 120px;
+    transition: 0.9s ease;
+  }
+
+  #answer3.show{
+    visibility: visible;
+    height: 120px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 768px){
+  #answer1.show{
+    visibility: visible;
+    height: 190px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 890px){
+  #answer1.show{
+    visibility: visible;
+    height: 150px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 1024px){
+  #answer1.show{
+    visibility: visible;
+    height: 170px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 1280px){
+  #answer1.show{
+    visibility: visible;
+    height: 190px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 1580px){
+  #answer1.show{
+    visibility: visible;
+    height: 150px;
+    transition: 0.9s ease;
+  }
 }
