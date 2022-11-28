@@ -84,7 +84,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col mt-16 px-4 sm:px-16'>
           <div className='w-full'>
-            <img className='w-1/2 sm:w-1/3 m-auto' src='g.png' alt='Logo G'/>
+            <img className='w-1/2 sm:w-1/3 m-auto' src='G.png' alt='Logo G'/>
           </div>
           <div className='w-full mt-10'>
             <p className='text-xl text-[#00578e]'>Visando um atendimento mais completo no mercado em departamento pessoal, recursos humanos e segurança do trabalho e medicina ocupacional é que nasce a GESST.  Uma empresa formada pela junção das maiores empresas em cada segmento.</p>
