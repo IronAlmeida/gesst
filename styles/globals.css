@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00578e;
+}
+
 html,
 body {
   padding: 0;
@@ -29,9 +38,7 @@ a {
   color: #00578E;
 }
 
-.bg li{
-  color: #00578E;
-}
+
 
 .slider-container{
   width: calc(220px * 3);
@@ -77,6 +84,12 @@ a {
   visibility: visible;
   height: 200px;
   transition: 0.9s ease;
+}
+
+@media (min-width: 1024px){
+  .bg li{
+    color: #00578E;
+  }
 }
 
 @media (max-width: 1023px){
