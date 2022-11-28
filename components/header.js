@@ -18,8 +18,8 @@ export default function Header (){
           <nav id="nav" className='flex'>
             <ul id="menu" className='flex items-center gap-16 text-lg'>
               <li className="md:hover:scale-125 transition-all duration-300"><Link onClick={toggleMenu} href='#home' activeClass="true" to="home" spy={true} smooth={true} offset={0} duration={600}>Home</Link></li>
-              <li className="md:hover:scale-125 transition-all duration-300">Serviços</li>
-              <li className="md:hover:scale-125 transition-all duration-300">Quem somos</li>
+              <li className="md:hover:scale-125 transition-all duration-300"><Link onClick={toggleMenu} href='#servicos' activeClass="true" to="home" spy={true} smooth={true} offset={500} duration={600}>Serviços</Link></li>
+              <li className="md:hover:scale-125 transition-all duration-300"><Link onClick={toggleMenu}  href='#about' activeClass="true" to="home" spy={true} smooth={true} offset={900} duration={600}>Quem somos</Link></li>
               <button className="md:hover:scale-125 transition-all duration-300 bg-[#f5aa1d] text-white text-center mt-4 lg:mt-0 p-4 lg:py-2 rounded-full">Solicitar orçamento</button>
             </ul>
             <AiOutlineMenu onClick={toggleMenu} id="burger" className="text-4xl lg:hidden text-[#fff]" />

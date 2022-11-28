@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full px-4 py-8 relative'> {/* SESSÃO SERVIÇOS */}
+      <section id='servicos' className='w-full px-4 py-8 relative'> {/* SESSÃO SERVIÇOS */}
         <div className='w-full flex flex-col md:flex-row md:flex-wrap mt-[-5rem] min-[320px]:-mt-[7rem] min-[640px]:-mt-[4rem] xl:-mt-[7rem] rounded-md px-8 lg:px-16 xl:px-20'> {/* CARD SERVIÇOS */}
           <div data-aos="zoom-in-down" className='w-[90%] min-[550px]:w-[70%] md:w-[40%] xl:w-1/4 m-auto bg-[#fff] text-center rounded-xl py-2 md:h-[220px] text-[#00578E] shadow-2xl'> {/* CARD SERVIÇO eSOCIAL */}
             <svg className="inline-block" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
@@ -83,7 +83,7 @@ export default function Home() {
         <button className='w-full min-[450px]:w-1/2 lg:w-1/3 m-auto flex justify-center items-center rounded-full bg-[#f5aa1d] p-2 mt-12 xl:mt-20 text-xl text-white'>Mais detalhes<AiOutlineArrowRight className='ml-2'/></button>
       </section>
 
-      <section className='bg-[#f5f6f7] w-full py-14'>
+      <section id='about' className='bg-[#f5f6f7] w-full py-14'>
         <div data-aos="zoom-in" className='w-full text-center text-[#00578e] text-3xl sm:text-5xl px-8 sm:px-16 lg:px-32 xl:px-64 2xl:px-96  font-bold lg:text-left'>
           <h2>Quem somos</h2>
         </div>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-[#f5f6f7] py-14 px-4 sm:px-28 w-full overflow-hidden'>
+      <section id='task' className='bg-[#f5f6f7] py-14 px-4 sm:px-28 w-full overflow-hidden'>
         <h2 data-aos="fade-down" className='text-3xl sm:text-4xl text-[#f5aa1d] text-center font-bold'>Perguntas frequentes</h2>
         <div className='flex flex-col w-full lg:w-3/4 xl:w-2/4 m-auto'> {/* PERGUNTAS FRENQUENTES */}
           <div data-aos="fade-right" onClick={taskOne} className='bg-[#00578e] rounded-3xl px-8 py-6 mt-16 z-10'>

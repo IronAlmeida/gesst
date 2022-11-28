@@ -12,9 +12,9 @@ export default function Widget () {
                     <h4 className="text-xl"><strong>Navegação</strong></h4>
                     <ul className="">
                         <li className="mt-4"><Link href='#home' activeClass="true" to="home" spy={true} smooth={true} offset={0} duration={600}>Home</Link></li>
-                        <li className="mt-4">Serviços</li>
-                        <li className="mt-4">Quem somos</li>
-                        <li className="mt-4">Perguntas frequentes</li>
+                        <li className="mt-4"><Link href='#servicos' activeClass="true" to="home" spy={true} smooth={true} offset={500} duration={600}>Serviços</Link></li>
+                        <li className="mt-4"><Link href='#about' activeClass="true" to="home" spy={true} smooth={true} offset={900} duration={600}>Quem somos</Link></li>
+                        <li className="mt-4"><Link href='#task' activeClass="true" to="home" spy={true} smooth={true} offset={1600} duration={600}>Perguntas frequentes</Link></li>
                     </ul>
                 </div>
                 <div className="w-full lg:w-1/4 mt-10 lg:m-0 text-white">
