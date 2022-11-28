@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'PT Sans', sans-serif;
+  background-color: #f0f0f0;
 }
 
 a {
@@ -18,12 +19,154 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.bg{
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  transition: 0.5s ease-in
+}
+
+.bg #burger{
+  color: #00578E;
+}
+
+.bg li{
+  color: #00578E;
+}
+
+.slider-container{
+  width: calc(220px * 3);
+  animation: scroll 5s linear infinite;
+}
+
+.slider-container:hover{
+  animation-play-state: paused;
+}
+
+.slide-card{
+  perspective: 100px;
+}
+
+.img{
+  transition: transform 1s;
+}
+
+.img:hover{
+  transform: translateZ(20px);
+}
+
+.toggle{
+  visibility: hidden;
+  height: 0px;
+  transition: 0.9s ease;
+  overflow: hidden;
+}
+
+#answer1.show{
+  visibility: visible;
+  height: 390px;
+  transition: 0.9s ease;
+}
+
+#answer2.show{
+  visibility: visible;
+  height: 200px;
+  transition: 0.9s ease;
+}
+
+#answer3.show{
+  visibility: visible;
+  height: 200px;
+  transition: 0.9s ease;
+}
+
+@media (max-width: 1023px){
+    #menu{
+      display: block;
+      top: 76px;
+      height: 0;
+      @apply absolute;
+      @apply right-0;
+      @apply w-full;
+      @apply gap-0;
+      @apply m-0;
+      @apply text-xl;
+      @apply text-center;
+      @apply z-50;
+      @apply invisible;
+      @apply overflow-y-hidden;
   }
-  body {
-    color: white;
-    background: black;
+
+  #nav ul{
+    @apply mt-8;
+  }
+
+  #menu li {
+      @apply font-bold;
+      @apply py-10;
+      @apply border-opacity-10;
+  }
+
+  #nav.active #menu{
+    height: 100vh;
+    transition: 0.9s ease;
+    @apply visible;
+    @apply overflow-y-scroll;
+  }
+
+  #nav.active #close{
+    @apply block;
+  }
+
+  #nav.active #burger{
+    @apply hidden;
+  }
+
+  #bg.active {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 20;
+    border-radius: 0;
+    transition: 0.5s ease-in;
+    background-color: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(6px);
+  }
+}
+
+@media (min-width: 320px){
+  #answer1.show{
+    visibility: visible;
+    height: 340px;
+    transition: 0.9s ease;
+  }
+
+  #answer2.show{
+    visibility: visible;
+    height: 170px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 330px){ 
+  #answer3.show{
+    visibility: visible;
+    height: 170px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 340px){
+  #answer1.show{
+    visibility: visible;
+    height: 310px;
+    transition: 0.9s ease;
+  }
+}
+
+@media (min-width: 420px){
+  #answer1.show{
+    visibility: visible;
+    height: 250px;
+    transition: 0.9s ease;
   }
 }
