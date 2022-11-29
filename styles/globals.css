@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 5px;
   background-color: #fff;
 }
 
@@ -31,7 +31,9 @@ a {
 .bg{
   background-color: white;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  transition: 0.5s ease-in
+  transition: 0.5s ease-in-out;
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
 }
 
 .bg #burger{
@@ -86,9 +88,36 @@ a {
   transition: 0.9s ease;
 }
 
+
+/* CARDS ROTATIVOS */
+
+.style-3d{
+  transform-style: preserve-3d;
+}
+
+.backface {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+/*FIM CARDS ROTATIVOS*/
+
 @media (min-width: 1024px){
   .bg li{
     color: #00578E;
+  }
+
+  ::-webkit-scrollbar{
+    width: 8px;
+    background-color: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00578e;
   }
 }
 
@@ -110,12 +139,12 @@ a {
   }
 
   #nav ul{
-    @apply mt-8;
+    @apply mt-4;
   }
 
   #menu li {
       @apply font-bold;
-      @apply py-10;
+      @apply py-8;
       @apply border-opacity-10;
   }
 
