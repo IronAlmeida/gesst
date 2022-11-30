@@ -72,6 +72,15 @@ export default function Home() {
     html.classList.toggle('rotate');
   }
 
+  const flipCardAssistente = () => {
+    const html = document.getElementById('assistente');
+    html.classList.toggle('rotate');
+  }
+  const flipCardParecer = () => {
+    const html = document.getElementById('parecer');
+    html.classList.toggle('rotate');
+  }
+
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -159,11 +168,11 @@ export default function Home() {
                     {/* FRENTE */}
                     <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col p-6 rounded-full text-center my-4 backface shadow-xl'>
                       <img className='m-auto' alt='Visita mensal' width={150} height={150} src="/building.png" />
-                      <h4 className='text-[#00578e] text-xl font-bold'>Visita mensal</h4>
+                      <h4 className='text-[#00578e] text-xl font-bold'>Inspenção in loco</h4>
                     </div>
                     {/* VERSO */}
                     <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col px-6 py-[6rem] rounded-full text-center my-4 hover backface rotate shadow-xl'>
-                      <p className='text-[#00578e] text-xl'>Realização de uma visita mensal para ações de segurança in loco.</p>
+                      <p className='text-[#00578e] text-xl'>Realização de visitas na empresa para executar ações de segurança.</p>
                     </div> 
                   </div> {/*Fim - Cartão Visita Mensal*/}
               </div>
@@ -191,7 +200,7 @@ export default function Home() {
                     </div>
                     {/* VERSO */}
                     <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col px-6 py-[5rem] rounded-full text-center my-4 hover backface rotate shadow-xl'>
-                      <p className='text-[#00578e] text-xl'>Treinamentos  periódicos  em  segurança  do  trabalho de acordo com necessidade da norma setorial.</p>
+                      <p className='text-[#00578e] text-xl'>Treinamentos de segurança  do  trabalho de acordo com necessidade da norma setorial.</p>
                     </div> 
                   </div> {/*Fim - Cartão TREINAMENTOS*/}
               </div>
@@ -248,8 +257,8 @@ export default function Home() {
                       <h4 className='text-[#00578e] text-xl font-bold'>PPP</h4>
                     </div>
                     {/* VERSO */}
-                    <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col px-6 py-[6rem] rounded-full text-center my-4 hover backface rotate shadow-xl'>
-                      <p className='text-[#00578e] text-xl'>Emissão de PPP (Perfil Profissiográfico Previdenciário) dos colaboradores.</p>
+                    <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col px-6 py-[5rem] rounded-full text-center my-4 hover backface rotate shadow-xl'>
+                      <p className='text-[#00578e] text-xl'>Emissão de PPP (Perfil Profissiográfico Previdenciário) dos colaboradores (Físico e Digital).</p>
                     </div> 
                 </div> {/*Fim - Cartão PPP*/}
               </div>
@@ -266,6 +275,34 @@ export default function Home() {
                       <p className='text-[#00578e] text-xl'>Assessoria de afastamento do INSS.</p>
                     </div> 
                 </div> {/*Fim - Cartão INSS*/}
+              </div>
+
+              <div data-aos="zoom-in-right" className='w-[270px] h-[270px] relative my-4 md:m-4 cursor-pointer'>
+                <div onClick={flipCardAssistente} id="assistente" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão Assistente tecnico*/}
+                    {/* FRENTE */}
+                    <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col p-6 rounded-full text-center my-4 backface shadow-xl'>
+                      <img className='m-auto' alt='INSS' width={150} height={150} src="/search.png" />  
+                      <h4 className='text-[#00578e] text-xl font-bold'>Assistente técnico em perícias</h4>
+                    </div>
+                    {/* VERSO */}
+                    <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col px-6 py-[6rem] rounded-full text-center my-4 hover backface rotate shadow-xl'>
+                      <p className='text-[#00578e] text-xl'>Analise de documentos para defesa pericial da justiça do trabalho.</p>
+                    </div> 
+                </div> {/*Fim - Cartão Assistente tecnico*/}
+              </div>
+
+              <div data-aos="zoom-in-left" className='w-[270px] h-[270px] relative my-4 md:m-4 cursor-pointer'>
+                <div onClick={flipCardParecer} id="parecer" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão emissão parecer*/}
+                    {/* FRENTE */}
+                    <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col p-6 rounded-full text-center my-4 backface shadow-xl'>
+                      <img className='m-auto' alt='INSS' width={150} height={150} src="/stamp.png" />  
+                      <h4 className='text-[#00578e] text-xl font-bold'>Emissão de parecer técnico</h4>
+                    </div>
+                    {/* VERSO */}
+                    <div className='absolute w-[270px] h-[270px] bg-[#fff] flex flex-col px-6 py-[5rem] rounded-full text-center my-4 hover backface rotate shadow-xl'>
+                      <p className='text-[#00578e] text-xl'>Analise de condições para auditorias, defesa no MTP e preparação de documentação para contratantes.</p>
+                    </div> 
+                </div> {/*Fim - Cartão emissão parecer*/}
               </div>
 
             </div>

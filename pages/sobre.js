@@ -85,7 +85,12 @@ export default function Servicos (){
                             Tive a benção de galgar do regime celetista passando do autônomo até alcançar o empresariado.
                             <br/><br/>
                             E, hoje... mais uma benção: Sou Sócio da GESST!
-                            </p>
+                            </p><br/>
+                            <a href='https://www.instagram.com/prof.andrecavalcanti/' target="_blank" rel="noreferrer">
+                                <div className='w-full text-center shadow-lg bg-[#ccc] rounded-full p-2'>
+                                    <p className='text-xl'>Instagram/@prof.andrecavalcanti</p>
+                                </div>
+                            </a>     
                         </div>
                     </div>
                 </div>
@@ -125,7 +130,12 @@ export default function Servicos (){
                             do 1º Congresso Nacional ON-LINE de Departamento Pessoal-2020.
                             <br/><br/>
                             E sou Sócia no Grupo GESST.
-                            </p>
+                            </p><br/>
+                            <a href='https://www.instagram.com/prof.andrecavalcanti/' target="_blank" rel="noreferrer">
+                                <div className='w-full text-center shadow-lg bg-[#ccc] rounded-full p-2'>
+                                    <p className='text-xl'>Instagram/@lourdesalmeidadp</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
