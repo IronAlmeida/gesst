@@ -109,7 +109,12 @@ export default function Servicos (){
                             Vivência profissional a mais de 25 anos na área de saúde ocupacional.
                             <br/><br/>
                             E sou Sócio da GESST.
-                            </p>
+                            </p><br/>
+                            <a href='https://www.instagram.com/danielcarvalho.santos/' target="_blank" rel="noreferrer">
+                                <div className='w-full text-center shadow-lg bg-[#ccc] rounded-full p-2'>
+                                    <p className='text-xl'>Instagram/@danielcarvalho.santos</p>
+                                </div>
+                            </a>
                         </div>
                         <img className='w-full lg:w-1/2' src='daniel.jpg' />
                     </div>
@@ -131,7 +136,7 @@ export default function Servicos (){
                             <br/><br/>
                             E sou Sócia no Grupo GESST.
                             </p><br/>
-                            <a href='https://www.instagram.com/prof.andrecavalcanti/' target="_blank" rel="noreferrer">
+                            <a href='https://www.instagram.com/lourdesalmeidadp/' target="_blank" rel="noreferrer">
                                 <div className='w-full text-center shadow-lg bg-[#ccc] rounded-full p-2'>
                                     <p className='text-xl'>Instagram/@lourdesalmeidadp</p>
                                 </div>

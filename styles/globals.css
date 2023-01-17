@@ -88,6 +88,9 @@ a {
   transition: 0.9s ease;
 }
 
+#menu #submenu ul li{
+  transition: 0.5s ease-in;
+}
 
 /* CARDS ROTATIVOS */
 
@@ -119,6 +122,10 @@ a {
   ::-webkit-scrollbar-thumb {
     background: #00578e;
   }
+
+  #menu #submenu:hover ul{
+    display: block;
+   }
 }
 
 @media (max-width: 1023px){
@@ -142,9 +149,9 @@ a {
     @apply mt-4;
   }
 
-  #menu li {
+  #menu > li {
       @apply font-bold;
-      @apply py-8;
+      @apply py-6;
       @apply border-opacity-10;
   }
 
@@ -172,6 +179,18 @@ a {
     transition: 0.5s ease-in;
     background-color: rgba(15, 23, 42, 0.5);
     backdrop-filter: blur(6px);
+  }
+
+  #submenu.active ul{
+    display: block;
+  }
+
+  #submenu.active #arrowD{
+    display: none;
+  }
+
+  #submenu.active #arrowU{
+    display: block;
   }
 }
 
